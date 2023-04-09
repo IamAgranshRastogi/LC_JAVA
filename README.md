@@ -1,1 +1,1 @@
-# LC_JAVA
+# LeetCode
