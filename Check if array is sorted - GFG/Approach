@@ -1,0 +1,5 @@
+Simple Pass/Brute Force Approach :
+* Simply check for all elements if previous to an element is larger than element itself then return false.
+* If Traversed completely return true.
+
+TC: O(N)
