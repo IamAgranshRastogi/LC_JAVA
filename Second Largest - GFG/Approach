@@ -1,0 +1,25 @@
+1) Brute Force :
+* First find largest element by sorting all elements and making last element(n-1) as largest.
+* Now Second largest element will be either second last element or the first element found which is not equal to largest element from last.
+* Return Second Largest.
+
+TC: O(NlogN + N)   [ Quick S :O(NlogN) , worst case : if first element is the second largest and rest all are duplicates.: O(N) ]
+
+
+
+2) Better Approach :
+* Take first element as largest and compare it with all rest element and upgrade the largest if found any element larger than largest.
+* Make Second largest : -1 and compare it with all other elements if found larger than it and not equal to largest,then update second largest. 
+* Return Second Largest.
+
+TC: O(2N)     [Finding largest: O[N] , Second Largest : O(N)]
+
+
+
+3) Optimal Approach :
+* Take first element as largest and second largest as -1.
+* Now Compare largest with each other element in array and upgrade its value if any element larger is found.
+* Also simultaneously update second largest with value of previous largest value after each upgradation of largest value.
+* Return Second Largest.
+
+TC: O(N)  [ Single Pass Comparison and Upgradation of Largest and Second Largest Value] 
