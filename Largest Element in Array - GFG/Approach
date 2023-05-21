@@ -1,0 +1,15 @@
+BruteForce : 
+* Firstly sort array.
+* Return last element as it will have largest.
+
+TC: O(NlogN)     [Quick S]
+SC:O(1)
+
+Optimized :
+* Make first element as largest.
+* Compare it with each other element.
+* Upgrade value of largest if any element is found larger than first.
+* Return Largest
+
+TC: O(N)
+SC: O(1)
