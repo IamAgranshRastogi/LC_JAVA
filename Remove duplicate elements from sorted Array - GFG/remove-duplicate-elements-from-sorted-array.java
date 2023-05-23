@@ -32,14 +32,13 @@ public class GFG {
 
 class Solution 
 { int remove_duplicate(int A[],int N)
-  { Set<Integer> s=new TreeSet<Integer>();
-    for(int i=0;i<N;i++)
-    { s.add(A[i]);
-    }
-    int index=0;
-    for(int j:s)
-    { A[index++]=j;
-    }
-    return index;
+  { int i = 0;
+     for (int j = 1; j < N; j++) 
+     { if (A[i] != A[j]) 
+       { i++;
+         A[i] = A[j];
+       }
+     }
+     return i + 1;
   }
 }
