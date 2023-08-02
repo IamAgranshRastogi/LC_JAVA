@@ -50,7 +50,7 @@ class Solution
   { int max=Integer.MIN_VALUE; // Creating a max with a min possible value 
     ArrayList<Integer> leaderop=new ArrayList<>();
     for(int i=n-1;i>=0;i--)  //Checking from right 
-    { if(arr[i]>=max) // if any ele is greater than oMax
+    { if(arr[i]>=max) // if any ele is greater than or equal to Max
       { max=arr[i];  // update max
         leaderop.add(max); // Max will also be greater than all right elements
       }
