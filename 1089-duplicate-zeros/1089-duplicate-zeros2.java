@@ -1,3 +1,5 @@
+//Brute Force Approach 
+// TC: O(n^2)
 class Solution 
 { public void duplicateZeros(int[] arr) 
   { int n=arr.length;
