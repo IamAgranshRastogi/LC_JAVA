@@ -31,6 +31,8 @@ class Main {
 }
 // } Driver Code Ends
 
+//TC: O(n)
+//SC: O(1)
 
 class Solution 
 {   //Equilibrium point :Sum of ele at left = Sum of ele at right
