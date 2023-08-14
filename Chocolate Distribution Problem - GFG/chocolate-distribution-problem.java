@@ -31,9 +31,6 @@ class GfG
 }
 // } Driver Code Ends
 
-
-//User function Template for Java
-
 class Solution
 {   public long findMinDiff (ArrayList<Integer> a, int n, int m)
     { Collections.sort(a);
