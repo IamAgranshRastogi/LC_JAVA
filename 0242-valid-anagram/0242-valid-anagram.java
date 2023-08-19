@@ -4,8 +4,8 @@
 // Brute Force Approach
 class Solution 
 { public boolean isAnagram(String s, String t) 
-  { s=s.toLowerCase();  // for comparison of both cases
-    t=t.toLowerCase();
+  { s=s.replaceAll("\\s","").toLowerCase();  // for comparison all to lowercase and remove spaces
+    t=t.replaceAll("\\s","").toLowerCase();
     if(s.length()!=t.length()) //if length not same Anagram not possible
     { return false;
     }
