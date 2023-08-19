@@ -21,22 +21,22 @@ class GFG {
 }
 // } Driver Code Ends
 
-//Optimised Approach 1
-// TC:O(n)
+//Optimised Approach2
+// TC:O(n)  
 // SC:O(n)
 
 
 class Solution 
 { String removeDups(String S) 
-  { boolean[] seen = new boolean[256];//To store boolean value for each ASCII value Lowercase 
-    StringBuilder res = new StringBuilder();// To use mutability
-    for(int i=0;i<S.length();i++)    
-    { char curr = S.charAt(i);   //checking for each character
-      if (!seen[curr])           //if not seen 
-      {  seen[curr] = true;      // make its boolean value true for further comparison
-         res.append(curr);      // add to StringBuilder
+  { Set<Character> chSet = new HashSet<>();  // No duplicates can be stored
+    StringBuilder res = new StringBuilder(); // To use mutability
+    for (int i=0;i<S.length();i++) 
+    { char curr=S.charAt(i);     // for each char in string
+      if (!chSet.contains(curr)) //if set do not contains that char
+      { chSet.add(curr);        // add that char to set for further comparison 
+        res.append(curr);       // add that char to stringbuilder for output
       }
     }
-    return res.toString();   // return StringBuilder after converting to string
+    return res.toString();   // return stringbuilder after converting to string
   }
 }
