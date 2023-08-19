@@ -1,6 +1,5 @@
 //{ Driver Code Starts
 //Initial Template for Java
-
 import java.io.*;
 import java.util.*;
 
@@ -21,10 +20,11 @@ class GFG {
 }
 // } Driver Code Ends
 
+
+
 //Optimised Approach2
 // TC:O(n)  
 // SC:O(n)
-
 
 class Solution 
 { String removeDups(String S) 
