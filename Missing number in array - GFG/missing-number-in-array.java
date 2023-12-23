@@ -27,16 +27,13 @@ class GFG {
 
 // User function Template for Java
 
-
-
-class Solution 
-{ int missingNumber(int array[], int n) 
-  {  int sum=0;
-     for(int i=0;i<n-1;i++)
-     { sum=sum+array[i];  // Sum of all elements in array
-     }
-     int s=n*(n+1)/2; // Sum of consecutive n numbers from 1 to n
-     
-     return s-sum; //Difference will give the result 
-  }
+class Solution {
+    int missingNumber(int array[], int n) {
+        int sum=0;
+        for(int i=0;i<n-1;i++){ 
+          sum=sum+array[i];  // Sum of all elements in array
+        }
+        int s=n*(n+1)/2; // Sum of consecutive n numbers from 1 to n
+        return s-sum;   //Difference will give the result
+    }
 }
