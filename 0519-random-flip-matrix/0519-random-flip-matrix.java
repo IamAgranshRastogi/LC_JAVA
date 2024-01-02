@@ -1,29 +1,33 @@
 class Solution {
-
-    Map<Integer, Integer> map;
-    int rows, cols, total;
-    Random rand;
-    
-    public Solution(int n_rows, int n_cols) {
-        map = new HashMap<>();
-        rand = new Random();
-        rows = n_rows; 
-        cols = n_cols; 
-        total = rows * cols;
+    public Solution(int m, int n) {
+        this.rows= m;
+        this.cols=n;
+        this.total=m*n;  
     }
     
     public int[] flip() {
-        int r = rand.nextInt(total--);
-        int x = map.getOrDefault(r, r);
-        map.put(r, map.getOrDefault(total, total));
-        return new int[]{x / cols, x % cols};
+        if(used.size()==total)
+          return new int[] {};
+        int index = new Random().nextInt(total);
+        while( used.contains(index))
+         index = ++index % total;
+         used.add(index);
+     return new int[] {index / cols, index % cols};      
     }
     
     public void reset() {
-        map.clear();
-        total = rows * cols;
+        used.clear();
     }
+
+    private Set<Integer> used = new HashSet<>();
+    private int rows;
+    private int cols;
+    private int total;
 }
+
+// Time  Complexity: O(1) for [flip] , O(1) for [reset]
+// Space Complexity: O(rows * cols)
+
 
 /**
  * Your Solution object will be instantiated and called as such:
