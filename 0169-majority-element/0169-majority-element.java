@@ -36,11 +36,9 @@ class Solution {
         if(leftcnt > (r-l+1)/2) {
            return leftmjr;    
         }
-        
         else if(rightcnt > (r-l+1)/2) {
            return rightmjr;
         }
-        
         else {
            return -1;
         }
