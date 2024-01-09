@@ -1,31 +1,27 @@
-// Using HashMap
+// Using Queue
 // TC: O(n)
-// SC: O(1)
+// SC: O(k)
 
 class DataStream {
-    HashMap<Integer,Integer>map;
-    int k;
-    int value;
+    Queue<Integer> q;
+    private int value,k;
     public DataStream(int value, int k) {
-        map=new HashMap<>();
-        this.k=k;
+        q=new LinkedList<>();
         this.value=value;
+        this.k=k;
     }
     
     public boolean consec(int num) {
-      if(num!=value){
-            map.clear();
-            return false;
-        }
-
-      if(!map.containsKey(num)){
-          map.put(num,1);
-      }
-
-      else{
-          map.put(num,map.getOrDefault(num,0)+1);
-        }
-        return map.get(num)>=k;
+     return check(num);   
+    }
+    
+    public boolean check(int num)
+    {
+        if(num==value)
+            q.add(num);
+        else
+            q=new LinkedList<>(); 
+        return q.size()>=k;
     }
 }
 
