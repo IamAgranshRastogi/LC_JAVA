@@ -1,4 +1,4 @@
-// Using Boyer-Moore Voting Approach
+// Most Better : Using Boyer-Moore Voting Approach
 // TC : O(n) 
 // SC : O(1)
 
