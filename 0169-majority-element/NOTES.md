@@ -40,11 +40,10 @@
 * By the end of the loop, majorityCandidate is the majority element.
 
 ## ﻿Comparisons of time and space complexities :
-**\
-• Two nested loops: Time = O(n^2), Space = O(1).
-• Using sorting: Time = O(nlogn), Space = O(1).
-• Divide and conquer: Time = O(nlogn), Space = O(1).
-• Hash table: Time = O(n), Space = O(n).
-• Bit manipulation: Time = O(n), Space= O(1).
-• Randomized algorithm: Time = O(nlogn), with a probability of failure 1/n if n is very large, Space = O(1).
-• Boyer-Moore voting algorithm: Time = O(n), Space = O(1).\**
+* Two nested loops: Time = O(n^2), Space = O(1).
+* Using sorting: Time = O(nlogn), Space = O(1).
+* Divide and conquer: Time = O(nlogn), Space = O(1).
+* Hash table: Time = O(n), Space = O(n).
+* Bit manipulation: Time = O(n), Space= O(1).
+* Randomized algorithm: Time = O(nlogn), with a probability of failure 1/n if n is very large, Space = O(1).
+* Boyer-Moore voting algorithm: Time = O(n), Space = O(1). 
